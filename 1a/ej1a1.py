@@ -40,9 +40,16 @@ Exemple:
 '''
 
 def fibonacci(fibonacci_number):
-    # Write here your code
+    if fibonacci_number == 0:
+        return 0
+    elif fibonacci_number == 1:
+        return 1
+    else: 
+        return fibonacci(fibonacci_number - 1) + fibonacci(fibonacci_number - 2)
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# print(fibonacci(10))
+#print(fibonacci(10))
+
+
