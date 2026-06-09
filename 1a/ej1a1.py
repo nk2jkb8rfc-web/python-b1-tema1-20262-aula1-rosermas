@@ -40,11 +40,11 @@ Exemple:
 '''
 
 def fibonacci(fibonacci_number):
-    if not isinstance(fibonacci_number,int):
+    if type(fibonacci_number) != int:
         raise ValueError("No és un valor numèric enter")
     if fibonacci_number < 0:
         raise ValueError("Ha de ser igual o superior a 0")
-    if fibonacci_number == 0:
+    elif fibonacci_number == 0:
         return 0
     elif fibonacci_number == 1:
         return 1

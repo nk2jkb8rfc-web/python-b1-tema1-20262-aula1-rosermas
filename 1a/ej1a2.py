@@ -44,15 +44,16 @@ Exemple:
 def sum_odd_numbers(list_numbers):
     resultat = 0
     for i in list_numbers:
-        if i % 2 != 0:
+        if type(i) != int:
+            raise ValueError("Els números han de ser valors numèrics enters")
+        elif i < 0:
+            raise ValueError("Els números han de ser iguals o superiors a 0")
+        elif i % 2 != 0:
             resultat += i
-    for i in list_numbers:
-        if type(i) != int or i < 0:
-            raise ValueError("MISSATGE D'ERROR")
-    
+            
     return resultat
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-#print(sum_odd_numbers([-2, 2, 3, 4, 5, 10, 21, 100]))
+print(sum_odd_numbers([1, 2, 3, 4, 5, 10, 21, 100]))

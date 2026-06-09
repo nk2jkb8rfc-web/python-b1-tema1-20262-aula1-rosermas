@@ -35,8 +35,9 @@ Exemple:
 
 def count_vowels(text_chain:str):
     comptador = 0
+    vocals = "AEIOUaeiou"
     for i in text_chain:
-        if i in ("A", "E", "I", "O", "U", "a", "e", "i", "o", "u"):
+        if i in vocals:
             comptador += 1 
     return comptador
 
