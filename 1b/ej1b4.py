@@ -65,9 +65,11 @@ Exemple:
 import numpy as np
 
 def results(list_numbers):
-    # Write here your code
-    pass
+    mitjana = np.mean(list_numbers)
+    desviacio = np.std(list_numbers)
+    return mitjana, desviacio
+print(f"Average: ""{mitjana:.2f}"", Standard deviation: ""{desviacio:.2f}")    
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# results([1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42])
+print(results([1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42]))
