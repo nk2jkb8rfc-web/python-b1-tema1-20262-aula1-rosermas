@@ -51,7 +51,6 @@ def sum_odd_numbers(list_numbers):
             raise ValueError("MISSATGE D'ERROR")
     
     return resultat
-    pass
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
