@@ -52,5 +52,5 @@ def is_palindrome(word):
 # word = "level"
 # print(f"Is '{word}' word palindrome?", is_palindrome(word))
 #
-#word = "Juan"
-#print(f"Is '{word}' word palindrome?", is_palindrome(word))
+word = "Juan"
+print(f"Is '{word}' word palindrome?", is_palindrome(word))
